@@ -292,6 +292,9 @@ span {
     font-size: 0.9rem;
     color: #dddddd;
 }
+.foot-panel2 a:hover{
+    text-decoration: underline;
+}
 .foot-panel2 p{
     font-size: 1.2rem;
     font-weight: 700;
@@ -309,6 +312,10 @@ span {
     flex-wrap: wrap;
     height:40px;
     margin-left:100px;
+}
+.panel3-buttons :hover{
+    background-color: #000000;
+    cursor: pointer;
 }
 .p-3-buttons{
     display: flex;
