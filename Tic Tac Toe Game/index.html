@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe Game</title>
+</head>
+<body class="bg-[#000000] text-center">
+    <main>
+        <div class=" msg-container mt-64 hidden ">
+            <p id="msg" class="text-3xl m-4 text-red-600 font-semibold ">Winner</p>
+            <button id ="new-game" class="text-center bg-red-600  h-12 p-2 rounded-lg text-white">New Game</button>
+        </div>
+        <div class="game-container">
+            <h1 class="text-4xl font-bold text-center mt-10 bg-red-600 w-3/12 mx-auto h-15 p-2 text-white rounded-lg ">Tic Tac Toe</h1>
+            <div class="container h-[70vh] flex justify-center items-center  ">
+                <div class="game h-[60vmin] w-[60vmin] flex flex-wrap text-6xl ml-24 text-[#000000]">
+                    <button class="box h-[18vmin] w-[18vmin] m-1 p-2 shadow-xl bg-white rounded-xl"></button>
+                    <button class="box h-[18vmin] w-[18vmin] m-1 p-2 shadow-xl bg-white rounded-xl"></button>
+                    <button class="box h-[18vmin] w-[18vmin] m-1 p-2 shadow-xl bg-white rounded-xl"></button>
+                    <button class="box h-[18vmin] w-[18vmin] m-1 p-2 shadow-xl bg-white rounded-xl"></button>
+                    <button class="box h-[18vmin] w-[18vmin] m-1 p-2 shadow-xl bg-white rounded-xl"></button>
+                    <button class="box h-[18vmin] w-[18vmin] m-1 p-2 shadow-xl bg-white rounded-xl"></button>
+                    <button class="box h-[18vmin] w-[18vmin] m-1 p-2 shadow-xl bg-white rounded-xl"></button>
+                    <button class="box h-[18vmin] w-[18vmin] m-1 p-2 shadow-xl bg-white rounded-xl"></button>
+                    <button class="box h-[18vmin] w-[18vmin] m-1 p-2 shadow-xl bg-white rounded-xl"></button>
+                </div>
+            </div>
+        </div>
+        <button id="reset-btn" class="text-center bg-red-600 h-12 p-2 rounded-lg text-white">Reset Game</button>
+    </main> 
+    <script src="app.js"></script>
+</body>
+</html>
