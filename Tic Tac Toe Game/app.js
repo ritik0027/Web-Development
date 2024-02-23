@@ -5,20 +5,24 @@ let msgContainer=document.querySelector(".msg-container")
 let msg=document.querySelector("#msg");
 let gameContainer=document.querySelector(".game-container");
 let turno=true;
+let buttonCount=0;
 
 const winPatterns=[[0,1,2],[0,3,6],[0,4,8],[1,4,7],[2,5,8],[2,4,6],[3,4,5],[6,7,8]];
 
 boxes.forEach((box)=>{
     box.addEventListener("click",()=>{
         if(turno){
+            box.classList.remove("text-red-600")
             box.innerText="O";
             turno=false;
         }
         else{
             box.innerText="X";
+            box.classList.add("text-red-600");
             turno=true;
         }
         box.disabled=true;
+        ++buttonCount;
         checkWinner();
     })
 })
@@ -26,6 +30,7 @@ boxes.forEach((box)=>{
 
 const resetGame=()=>{
     turno=true;
+    buttonCount=0;
     enableBoxes();
     msgContainer.classList.add("hidden");
     resetBtn.classList.remove("hidden");
@@ -68,6 +73,9 @@ const checkWinner=()=>{
                 showWinner(pos1);
                 }
             }
+        }
+        if(buttonCount===9){
+            msg.innerHTML="The Game is Tie!"
         }
     }
 
